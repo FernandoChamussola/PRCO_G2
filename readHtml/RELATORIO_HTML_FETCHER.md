@@ -7,7 +7,6 @@ Linguagem: Java
 Versão: 1.0
 Data: Novembro 2025
 Objetivo: Buscar e salvar localmente o conteúdo HTML de páginas web
-
 ---
 
  2. Descrição Geral
@@ -64,41 +63,41 @@ O projeto é composto por duas classes principais:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                  INÍCIO DO PROGRAMA                          │
-│                    (MainHTML.java)                           │
+│                  INÍCIO DO PROGRAMA                         │
+│                    (MainHTML.java)                          │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│               Exibir Título do Sistema                       │
+│               Exibir Título do Sistema                      │
 │   "Leitor e Gravador de Conteúdo HTML via URL"              │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│           Solicitar entrada do usuário                       │
-│               "Digite a URL:"                                │
+│           Solicitar entrada do usuário                      │
+│               "Digite a URL:"                               │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                Ler URL fornecida (url)                       │
+│                Ler URL fornecida (url)                      │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│          Chamar HTMLFetcher.fetchHTML(url)                   │
+│          Chamar HTMLFetcher.fetchHTML(url)                  │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│         [Processo de busca e gravação executado]             │
-│              (Ver diagrama detalhado abaixo)                 │
+│         [Processo de busca e gravação executado]            │
+│              (Ver diagrama detalhado abaixo)                │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                    Fechar Scanner                            │
+│                    Fechar Scanner                           │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
@@ -111,13 +110,13 @@ O projeto é composto por duas classes principais:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│           INÍCIO: fetchHTML(String urlString)                │
+│           INÍCIO: fetchHTML(String urlString)               │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│      Declarar: BufferedReader reader = null                  │
-│      Declarar: BufferedWriter writer = null                  │
+│      Declarar: BufferedReader reader = null                 │
+│      Declarar: BufferedWriter writer = null                 │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
@@ -156,7 +155,7 @@ O projeto é composto por duas classes principais:
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
-│    outputFile = new File("pagina_lida.txt")                  │
+│    outputFile = new File("pagina_lida.txt")                 │
 └──────────────────────────┬──────────────────────────────────┘
                            │
                            ▼
